@@ -1,0 +1,25 @@
+These have been pulled from some of my old notes and have not been checked for correctness.
+
+sadness - https://opengameart.org/content/visions-of-freedom-rpg-orchestral-essentials-sad-music
+sadness2 - https://opengameart.org/content/sad-song
+sadness3 - https://opengameart.org/content/aftermath
+tension1 - https://opengameart.org/content/tower-of-great-lords
+tension2 - https://opengameart.org/content/concentration
+tension3 - https://opengameart.org/content/laments-of-the-war
+
+calm - https://opengameart.org/content/medieval-kings-feast
+
+war1 - https://opengameart.org/content/war-of-the-arcane-18-rpg-tracks (track 1)
+war2 - https://opengameart.org/content/the-tread-of-war-rpg-orchestral-essentials-military-music
+war3 - https://opengameart.org/content/eye-of-the-storm-0
+
+action1 - https://opengameart.org/content/boss-battle-2-symphonic-metal
+action2 - https://opengameart.org/content/the-wreck
+action3 - https://opengameart.org/content/theorem-199-variant-1
+action4 - https://opengameart.org/content/boss-battle-6-metal
+action5 - https://opengameart.org/content/lark
+
+menu - https://opengameart.org/content/through-the-veil-of-time-collab-with-tad
+gameover - https://opengameart.org/content/sad-piano-0
+ending - https://opengameart.org/content/ending-scene
+stinger - https://opengameart.org/content/sacred-battle

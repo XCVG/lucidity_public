@@ -1,0 +1,140 @@
+{
+  "background": "garricktower",
+  "position": "character",
+  "default": "plot1",
+  "frames": {
+    "plot1": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot2",
+      "text": "Lord Brukton's lands, ripe for the taking."
+    },
+    "plot2": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot3",
+      "text": "That bastard was bound to die sooner or later. And now there is no Lord Brukton, because his fool of a daughter didn't marry and the idiot didn't make her. It's almost sad, isn't it?"
+    },
+    "plot3": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot4",
+      "text": "Good riddance, I'd say, about his lordship. I'd have liked to put my blade through him myself, but a corupted wound from a bandit's arrow, that's not a bad way to die. Well, I suppose it was for him."
+    },
+    "plot4": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot5",
+      "text": "Are we going to march yet? I wouldn't mind taking that fool of a daughter myself."
+    },
+    "plot5": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot6",
+      "text": "If you do that, cousin, you will be marrying her. You have fathered enough bastards already. Though I don't think it would be so easy as you believe."
+    },
+    "plot6": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot7",
+      "text": "Ah, yes, the girl and her magic sword. Piss on that, I say. I've got a magic sword of my own."
+    },
+    "plot7": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot8",
+      "text": "Sometimes you disgust me, Lar."
+    },
+    "plot8": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot9",
+      "text": "And sometimes I want to put a blade through your belly, <i>my lord</i>."
+    },
+    "plot9": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot10",
+      "text": "I would not dismiss Lady Briella and Silvergleam so quickly. She may never have received formal training, but she is surprisingly skilled with a sword. And when Lord Ronn Brukton wielded Silvergleam, none of our ancestors dared stand against him."
+    },
+    "plot10": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot11",
+      "text": "She's a girl that thinks she's a knight. Have you ever seen a lady knight? Ha! What a stupid idea. She's more likely to stab herself with that sword, I'd say."
+    },
+    "plot11": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot12",
+      "text": "A week ago, I would have agreed with you, though perhaps not with the same words."
+    },
+    "plot12": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot13",
+      "text": "What happened? Did someone cut off your manhood?"
+    },
+    "plot13": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot14",
+      "text": "What happened was she cut down the bandits that killed her father and a few highwaymen for good measure."
+    },
+    "plot14": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot15",
+      "text": "Pretty lousy bandits if a scared little girl went through 'em like that."
+    },
+    "plot15": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot16",
+      "text": "Our scout swears on his honour that she not only wielded Silvergleam, but moved faster than any man and wielded magic as well."
+    },
+    "plot16": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot17",
+      "text": "A <i>magical</i> girl now? Do you really believe that? I've met mages, Rigan, but I've never met a mage I couldn't take with my sword. More likely they paid off your scout tryin' to scare us."
+    },
+    "plot17": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "plot18",
+      "text": "I am disinclined to believe him as well, but House Brukton could not have paid him more than us. I do not know if Lady Briella somehow became a mage, or if she can truly wield Silvergleam. But I will not make the mistake of underestimating her."
+    },
+    "plot18": {
+      "type": "text",
+      "nameText": "Sir Lar",
+      "image": "lar",
+      "next": "plot19",
+      "text": "What, are we going to let her keep her little queendom?"
+    },
+    "plot19": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "next": "meta.return",
+      "text": "Of course not. Even the best fighter in the world can only fight one fight at once."
+    }
+  }
+}

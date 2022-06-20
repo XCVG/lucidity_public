@@ -1,0 +1,98 @@
+{
+  "background": "intro_graveyard2",
+  "position": "character",
+  "default": "funeral1",
+  "frames": {
+    "funeral1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "annekesad",
+      "text": "I miss Father already. What about you, Briella?",
+      "choices": [
+        {
+          "text": "Yes, I miss him too",
+          "next": "funeral2"
+        },
+        {
+          "text": "He's in a better place now",
+          "next": "funeral2"
+        },
+        {
+          "text": "I'm glad he's gone",
+          "next": "funeral1a",
+          "microscript": [
+            {
+              "flag": "IntroDidNotMissFather",
+              "set": true
+            }
+          ]
+        }
+      ]
+    },
+    "funeral1a": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "annekesad",
+      "text": "How could you, Briella? He was our father! Didn't you love him?",
+      "choices": [
+        {
+          "text": "Of course, I didn't mean what I said.",
+          "next": "funeral2"
+        },
+        {
+          "text": "Of course, but I still don't miss him",
+          "next": "funeral2"
+        },
+        {
+          "text": "No. He wasn't a good father to me.",
+          "next": "funeral1b",
+          "microscript": [
+            {
+              "flag": "IntroReallyDidNotMissFather",
+              "set": true
+            }
+          ]
+        }
+      ]
+    },
+    "funeral1b": {
+      "type": "text",
+      "nameText": "Annake",
+      "image": "annekesad",
+      "text": "Well, I miss him.",
+      "next": "funeral2"
+    },
+    "funeral2": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "annekesad",
+      "text": "What are you going to do now? Father always said that it's a lord's duty to protect his castle and his people, but now there is no Lord Brukton. Who is going to protect us, Briella?",
+      "choices": [
+        {
+          "text": "I will!",
+          "next": "meta.return",
+		  "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 2
+            }
+          ]
+        },
+        {
+          "text": "I'll try my best",
+          "next": "meta.return",
+		  "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I have an idea. A bad idea.",
+          "next": "meta.return"
+        }
+      ]
+    }
+  }
+}

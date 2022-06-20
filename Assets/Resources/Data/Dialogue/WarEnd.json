@@ -1,0 +1,309 @@
+{
+  "background": "castle_council2",
+  "position": "character",
+  "default": "end1",
+  "frames": {
+    "end1": {
+      "type": "choice",
+      "nameText": "",
+      "text": "",
+      "choices": [
+        {
+          "text": "How bad is it? How many villages burned?",
+          "next": "villages1",
+          "microscript": [
+            {
+              "variable": "WarEndCompassion",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Any ideas for a plan?",
+          "next": "plan1"
+        },
+        {
+          "text": "I'm going to end this, right now!",
+          "next": "end2",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 3
+            }
+          ]
+        }
+      ]
+    },
+    "villages1": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "We are not entirely sure, milady. The two you saw burning, at least, and our scouts saw three more, all near Garrick lands.",
+      "next": "villages2"
+    },
+    "villages2": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "Most likely, Lord Garrick would keep his forces on the far side of the river, launching only probing attacks. That still leaves dozens of villages and towns, with thousands of your people in grave danger if not already under attack.",
+      "choices": [
+        {
+          "text": "How could Rigan be so cruel?",
+          "next": "villages3",
+          "microscript": [
+            {
+              "variable": "WarEndCompassion",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "That's bad, but we can't rush into this.",
+          "next": "plan1"
+        },
+        {
+          "text": "If he wants war, I'll give him war!",
+          "next": "end2",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    "villages3": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "Lord Garrick does not see people dying, only a means to an end. He is like many other lords in that regard. Perhaps if it were his own subjects, he would have more restraint, but he either cannot see or chooses not to see the parallels. Your subjects ultimately mean little to him.",
+      "next": "villages4"
+    },
+    "villages4": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "We can't stand by and let them slaughter us, milady! My men stand ready. What shall you have us do?",
+      "choices": [
+        {
+          "text": "Retaliate, but with a plan.",
+          "next": "plan1"
+        },
+        {
+          "text": "End this war, now!",
+          "next": "end2",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    "plan1": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "A plan is always good to have when one is marching to war.",
+      "next": "plan2"
+    },
+    "plan2": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "I believe Lord Garrick baited you deliberately, sacrificing part of his army to commit you to battle while the rest raided and retreated before you could respond. A decisive battle would be the end of his campaign, and he has avoided such at all costs.",
+      "next": "plan3"
+    },
+    "plan3": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Well, we have to meet his army somewhere!",
+      "next": "plan4"
+    },
+    "plan4": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "Consider that he does not have one army but a half dozen armies. You will attack one, and perhaps even win even with your own small numbers. Lady Brukton will attack another, and defeat them as well. That is only a portion of Lord Garrick's strength. ",
+      "next": "plan5"
+    },
+    "plan5": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Do you doubt our courage? We'll attack them again until they're all gone!",
+      "next": "plan6"
+    },
+    "plan6": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "This is not about courage, Timo. Of that I have no doubt. This is about attrition. If we call every levy we still cannot muster even a tenth their force.",
+      "next": "plan7"
+    },
+    "plan7": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Attrition... oh. Milady, we'll fight to the end, but I fear Johann may be right. We will lose men until there are none left, and even you need rest.",
+      "next": "plan8"
+    },
+    "plan8": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "Let us be realistic. Even if, by some miracle, we could defeat all elements of Lord Garrick's army, we would not be able to do so before all our lands east of the river burn. ",
+      "next": "plan9",
+      "choices": [
+        {
+          "text": "What about Lord Westerhold?",
+          "next": "plan8a"
+        },
+        {
+          "text": "So what would you have us do?",
+          "next": "plan9"
+        }
+      ]
+    },
+    "plan8a": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "Lord Westerhold's reply was worded carefully, but its intent is clear. He will not intervene until there is a clear victor, and then reward them with a title and a tithe. He does not consider a skirmish between two of his vassals worth his intervention.",
+      "next": "plan9"
+    },
+    "plan9": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Lord Garrick fears a decisive battle, for one obvious reason. I say we give him one.",
+      "next": "end2"
+    },
+    "end2": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "A decisive battle... The only way to <i>immediately</i> end this war would be to attack Lord Garrick in his own castle.",
+      "choices": [
+        {
+          "text": "That's a great idea, Johann!",
+          "next": "end3",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Exactly what I had in mind.",
+          "next": "end3",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "In his own castle? That's insane!",
+          "next": "end2b"
+        },
+        {
+          "text": "What makes you think he's in his castle?",
+          "next": "end2a"
+        }
+      ]
+    },
+    "end2a": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Lord Garrick is a gods-damned coward, milady, beg pardon. Castle Garrick hasn't been successfully sieged in a thousand years, and he knows we don't have the men to do it.",
+      "next": "end4"
+    },
+    "end2b": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Well, we certainly can't siege Castle Garrick, not with the men we have. But with you and your magic, milady, maybe there's another way.",
+      "next": "end4"
+    },
+    "end3": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "I do have my moments of brilliance. I do not count this among them.",
+      "next": "end4"
+    },
+    "end4": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "text": "I caution you, milady, not to take this lightly. Castle Garrick is well defended, and it will be a brutal battle. It is simply that I do not see any other option, certainly no military option. Lord Westerhold will not intervene, and we have no allies who are not also Garrick allies. Burning the bridges would delay Lord Garrick, but would not stop him, and I know you will not leave the people on the other side to their fate.",
+      "choices": [
+        {
+          "text": "It's fine, I can take Lord Garrick!",
+          "next": "meta.return",
+          "microscript": [
+            {
+              "variable": "WarEndAggression",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "It'll be difficult, but we can do it. ",
+          "next": "meta.return"
+        },
+        {
+          "text": "If it's the only option, it's the only option. ",
+          "next": "meta.return"
+        }
+      ]
+    },
+    "skip1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "The village of Kelnbend was burned, milady. That's the first village we've seen burned in weeks. They say it was quick, and it was brutal. They came in the morning, killed the men, took the women, stole what they could, and burned the village before noon.",
+      "choices": [
+        {
+          "text": "And you think it isn't bandits this time?",
+          "next": "skip2",
+          "conditional": [
+            {
+              "next": "skip2",
+              "conditions": []
+            },
+            {
+              "next": "skip2a",
+              "conditions": [
+                {
+                  "noflag": "UnleashedWasReluctant"
+                },
+                {
+                  "flag": "UnleashedDidBeArrogant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I don't care who it is, I can take them",
+          "next": "skip3"
+        }
+      ]
+    },
+    "skip2": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Well, they didn't act much like bandits, with what they did, and a few villagers that escaped say they looked and talked like Garrick men.",
+      "next": "skip3"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "background": "launch_backdrop",
+  "position": "character",
+  "default": "launch1",
+  "frames": {
+    "launch1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Johann was adamant that this would work, milady.",
+      "choices": [
+        {
+          "text": "Oh, if he thinks it's safe, then...",
+          "next": "launch2"
+        },
+        {
+          "text": "Johann isn't the one getting flung",
+          "next": "launch2"
+        },
+        {
+          "text": "If he says so, it definitely won't work",
+          "next": "launch2"
+        }
+      ]
+    },
+    "launch2": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Well, we have faith in you, milady. I know you'll be fine.",
+      "choices": [
+        {
+          "text": "Great. Let's do this!",
+          "next": "launchend"
+        },
+        {
+          "text": "Do you remember your part of the plan?",
+          "next": "plan1"
+        },
+        {
+          "text": "I'm surprised Garrick hasn't attacked us already.",
+          "next": "garrick1"
+        }
+      ]
+    },
+    "garrick1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "I think Lord Garrick wants to see what we do. He thinks we're not a great threat, trebuchet or no trebuchet. He probably thinks we have some sort of sneaky plan.",
+      "choices": [
+        {
+          "text": "And he's right about that.",
+          "next": "launchend"
+        },
+        {
+          "text": "We do, it's just incredibly stupid.",
+          "next": "launchend"
+        },
+        {
+          "text": "Do you remember <i>your</i> part of the plan?",
+          "next": "plan1"
+        }
+      ]
+    },
+    "plan1": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Not much of a plan for us, milady. Run for the hills and hold until you raise a Brukton flag over the castle.",
+      "next": "launchend"
+    },
+    "extra1": {
+      "type": "text",
+      "nameText": "Timo",
+      "background": "launch_map",
+      "text": "Well, sure, milady. We launch you over the wall using this trebuchet here. It should be safe, or Johann figures, since falling never seems to hurt you. Then you'll fight your way to the keep in the middle and do what you will with Lord Garrick. Now those gates are too strong even for you to break through, so you'll need to find another way. Mayhaps you can jump off the roof of this temple here, or the bottom of this tower over here. And to get into the keep itself, there's another door, up here, that's not so strong. Me and the guards will stay out here until you raise the Brukton flag.",
+      "next": "launchend"
+    },
+    "launchend": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Whenever you're ready, milady.",
+      "next": "meta.return",
+      "nextText": "No time like the present!",
+      "choices": [
+        {
+          "text": "Let's go over the plan one last time.",
+          "next": "extra1"
+        },
+        {
+          "text": "No time like the present!",
+          "next": "meta.return"
+        }
+      ]
+    },
+    "skip1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "The village of Kelnbend was burned, milady. That's the first village we've seen burned in weeks. They say it was quick, and it was brutal. They came in the morning, killed the men, took the women, stole what they could, and burned the village before noon.",
+      "choices": [
+        {
+          "text": "And you think it isn't bandits this time?",
+          "next": "skip2",
+          "conditional": [
+            {
+              "next": "skip2",
+              "conditions": []
+            },
+            {
+              "next": "skip2a",
+              "conditions": [
+                {
+                  "noflag": "UnleashedWasReluctant"
+                },
+                {
+                  "flag": "UnleashedDidBeArrogant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I don't care who it is, I can take them",
+          "next": "skip3"
+        }
+      ]
+    },
+    "real1": {
+      "type": "choice",
+      "text": "Hey. You alright? You kind of zoned out there.",
+      "next": "real1",
+      "choices": [
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "real2"
+        },
+        {
+          "text": "No, I'm not okay, I haven't been okay in like ever.",
+          "next": "real1a",
+          "microscript": [
+            {
+              "quest": "Sanity",
+              "add": -5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

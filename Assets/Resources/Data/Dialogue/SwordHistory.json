@@ -1,0 +1,84 @@
+{
+  "background": "swordscene_closeupold",
+  "position": "character",
+  "default": "old1",
+  "frames": {
+    "old1": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old2",
+      "text": "Briella! What are you doing?"
+    },
+    "old2": {
+      "type": "text",
+      "nameText": "Young Briella",
+      "image": "briellaold",
+      "next": "old3",
+      "text": "It's my fourteenth birthday, father. I wish to try to wield Silvergleam."
+    },
+    "old3": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old4",
+      "text": "No! I forbid it! It is not for you!"
+    },
+    "old4": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old5",
+      "text": "Silvergleam is not a toy, Briella. It is a very powerful sword, and the pride of our house. Only a few like it exist, and all others belong to the great houses. The legends speak of warriors who wielded the sword and were unstoppable on the battlefield. They say they could move faster than any man, strike down their foes with bolts of lightning, and cleave through stone and steel as if it were paper."
+    },
+    "old5": {
+      "type": "text",
+      "nameText": "Young Briella",
+      "image": "briellaold",
+      "next": "old6",
+      "text": "I know the legend, father. "
+    },
+    "old6": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old7",
+      "text": "Then you know every Brukton son attempts to wield it on his fourteenth birthday. Every Brukton son, Briella. Not any son of anyone, not a Brukton daughter, only a true Brukton son. If he is noble of spirit and strong of character, Silvergleam will be as light as air and glow as bright as the sun. If he is not, it will be as dull and heavy as lead."
+    },
+    "old7": {
+      "type": "text",
+      "nameText": "Young Briella",
+      "image": "briellaold",
+      "next": "old8",
+      "text": "You couldn't wield it, father. What does that mean?"
+    },
+    "old8": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old9",
+      "text": "It's only a legend, Briella. Perhaps one day another man will wield Silvergleam, though it is said magic wanes every day. When I was a younger, unworldly man, I had hoped it would be one of my sons. Our blood was strong- your mother was my cousin, a Brukton by both parents- and blood is powerful in magic. But your brother was stillborn, and my beloved Daria died giving birth to Annake."
+    },
+    "old8a": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old9",
+      "text": "When I was a younger and unworldly, I had hoped that one of my sons could have wielded it. "
+    },
+    "old9": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcusold",
+      "next": "old10",
+      "text": "In the end, a legend is just a story. Still, I need you to swear to me you will never lay a hand on Silvergleam. It is not yours to claim. Swear it on our house, Briella."
+    },
+    "old10": {
+      "type": "text",
+      "nameText": "Young Briella",
+      "image": "briellaold",
+      "next": "meta.return",
+      "text": "I swear it, father. On the honour of our house, I swear it."
+    }
+  }
+}

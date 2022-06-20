@@ -1,0 +1,105 @@
+# Shattered - Why Not Me asset credits
+
+**See also the CommonCore credits in the CommonCore Documentation**
+
+## Music
+
+Alexandr Zhelanov - Tower of Great Lords (https://soundcloud.com/alexandr-zhelanov)
+
+Cethiel - Laments of the War (https://opengameart.org/content/laments-of-the-war)
+
+HitCtrl and Tad - Through the Veil Of Time (https://opengameart.org/content/through-the-veil-of-time-collab-with-tad)
+
+Indieteur - Aftermath (https://opengameart.org/content/aftermath)
+
+Joseph Gilbert / Kistol - Lark (https://opengameart.org/content/lark)
+
+JSKNYC - Concentration (https://opengameart.org/content/concentration)
+
+megaPixelMusic - Sad Piano (https://soundcloud.com/megapixelmusic)
+
+mvrasseli - Sad Song (https://opengameart.org/content/sad-song)
+
+nene - Boss Battle #2 [Symphonic Metal] (https://opengameart.org/content/boss-battle-2-symphonic-metal)
+
+nene - Boss Battle #6 Metal (https://opengameart.org/content/boss-battle-6-metal)
+
+nene - Ending Scene (https://opengameart.org/content/ending-scene)
+
+RandomMind - Medieval: King's Feast (https://opengameart.org/content/medieval-kings-feast)
+
+SketchyLogic - War of the Arcane (18 RPG tracks) (https://opengameart.org/content/war-of-the-arcane-18-rpg-tracks)
+
+Tausdei - Sacred Battle (https://opengameart.org/content/sacred-battle)
+
+Zander Noriega - The Wreck (https://opengameart.org/users/zander-noriega)
+
+Zander Noriega - Theorem 199 Variant 1 (https://opengameart.org/users/zander-noriega)
+
+
+"The Tread of War" Composed by Jonathan Shaw (www.jshaw.co.uk)
+
+"Visions of Freedom" Composed by Jonathan Shaw (www.jshaw.co.uk)
+
+## Sounds
+
+AderuMoro - Fighting Game grunts - young female (https://freesound.org/people/AderuMoro/sounds/213295/)
+
+bart - Space Ship Shield Sounds (https://opengameart.org/content/space-ship-shield-sounds)
+
+cabled_mess - Impact test (https://freesound.org/people/cabled_mess/sounds/339694/)
+
+DoKashiteru - 3 Heal Spells (https://opengameart.org/content/3-heal-spells)
+
+Erdie - bow01.wav (https://freesound.org/people/Erdie/sounds/65733/)
+
+Erdie - bow02.wav (https://freesound.org/people/Erdie/sounds/65734/)
+
+Halgrimm - human grunts 2 (https://freesound.org/people/Halgrimm/sounds/218894/)
+
+Iwan Gabovitch - Door open, door close (https://opengameart.org/content/door-open-door-close)
+
+Kalibrk - JirkaScream (https://freesound.org/people/Kalibrk/sounds/339309/)
+
+KieVinay - Bass Impact - Ki_01.mp3 (https://freesound.org/people/KieVinay/sounds/512389/)
+
+Kreastricon62 - Bloody Blade 2.wav (https://freesound.org/people/Kreastricon62/sounds/323526/)
+
+Little Robot Sound Factory - Fantasy Sound Effects Library (www.littlerobotsoundfactory.com)
+
+Luke.RUSTLTD - bomb_explosion_8bit (https://opengameart.org/content/bombexplosion8bit)
+
+michael_grinnell - Lightening bang impact.wav (https://freesound.org/people/michael_grinnell/sounds/512476/)
+
+Michel Baradari - 2 High Quality Explosions (https://opengameart.org/content/2-high-quality-explosions)
+
+RSilveira88 - Frequency_Impact_03.wav (https://freesound.org/people/RSilveira_88/sounds/216248/)
+
+slamaxu - female_gasp.wav (https://freesound.org/people/slamaxu/sounds/509883/)
+
+spookymodem - Magic Smite (https://opengameart.org/content/magic-smite)
+
+spookymodem - Wall Impact (https://opengameart.org/content/wall-impact)
+
+toxicwafflezz - Bullet_Impact_3 (https://freesound.org/people/toxicwafflezz/sounds/150839/)
+
+Vehicle - Fantasy Sound Effects (Tinysized SFX) (https://opengameart.org/content/fantasy-sound-effects-tinysized-sfx)
+
+
+Some CC0/public domain sounds were used, either on their own or in mixes. Known authors include C3Sabertooth, independent.nu, qubodup, rubberduck, and Vehicle (some are probably mentioned above).
+
+Some of the sounds in this project were created by ViRiX Dreamcore (David Mckee) www.soundcloud.com/virix
+
+## Textures
+
+athile - Seamless Grass Textures (20 pack) (https://opengameart.org/content/seamless-grass-textures-20-pack)
+
+Lamoot - Dry Grass (https://opengameart.org/content/dry-grass)
+
+
+Several CC0/public domain textures I've lost the attributions for. You may recognize some of these from my previous games!
+
+## Other
+
+Laxer - Mobile Tree Package (https://assetstore.unity.com/packages/3d/vegetation/trees/mobile-tree-package-18866)
+

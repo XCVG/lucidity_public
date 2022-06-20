@@ -1,0 +1,232 @@
+{
+  "background": "trainingyard",
+  "position": "character",
+  "default": "before1",
+  "frames": {
+    "before1": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "So... it is true. I never thought I would see the day. And, if you excuse me saying, I never thought it would be you.",
+      "choices": [
+        {
+          "text": "What can you tell me?",
+          "next": "before2"
+        },
+        {
+          "text": "It is a big deal, isn't it",
+          "next": "before2"
+        },
+        {
+          "text": "Why not me?",
+          "next": "before1a"
+        }
+      ]
+    },
+    "before1a": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "It is always the sons that are supposed to test the artifacts. Not only House Brukton and Silvergleam, but every other house as well. Always the sons, never the daughters. Very specifically. I do not know the true reason why that is, though I do not have access to as much reference material as I would like. I had assumed there was a good reason.",
+      "choices": [
+        {
+          "text": "A good reason like \"it'll work\"?",
+          "next": "before1b"
+        },
+        {
+          "text": "Maybe I'm extra-special",
+          "next": "before1b"
+        },
+        {
+          "text": "Well, we're here now",
+          "next": "before1b"
+        }
+      ]
+    },
+    "before1b": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "Yes, perhaps. I suppose this is something for me to study later.",
+      "next": "before2"
+    },
+    "before2": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "The last known wielder of Silvergleam was Ronn The Great, perhaps four centuries ago. A long time ago, but not so long that no records exist. Under his reign, House Brukton rose from a minor house to rule all of what we now call Westerhold. But none of his descendants could wield Silvergleam. His son held on to most of his lands, but his grandson lost them all to House Westerhold, and House Brukton was reduced to a vassal house once more.",
+      "next": "before3"
+    },
+    "before3": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "There are accounts of Ronn The Great's prowess in battle, and of the magic he wielded. They say he had the strength of a dozen men and could never be harmed in battle. I believe those are just embellishments. It is some of the more specific statements that always held my interests.",
+      "next": "before4"
+    },
+    "before4": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "It was said by many that he could run fast as a horse, sometimes so fast he appeared to appear from nowhere. There is a story that he once leapt over a hovel to win a bet. His daughter's diary states that he healed her through magic. And accounts from rival lords mention that he could strike with blasts of light from either Silvergleam or his hands. ",
+      "choices": [
+        {
+          "text": "He ran as fast as a horse?",
+          "next": "run1"
+        },
+        {
+          "text": "Leapt over a hovel over a <i>bet</i>?",
+          "next": "leap1"
+        },
+        {
+          "text": "Healing with magic?",
+          "next": "heal1"
+        },
+        {
+          "text": "Blasts of light? Like a mage?",
+          "next": "blast1"
+        },
+        {
+          "text": "I think I've heard enough. How do I use them?",
+          "next": "beforeend"
+        }
+      ]
+    },
+    "before4a": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "If you are curious about any of the stories, I will answer to the best of my ability.",
+      "choices": [
+        {
+          "text": "He ran as fast as a horse?",
+          "next": "run1"
+        },
+        {
+          "text": "Leapt over a hovel over a <i>bet</i>?",
+          "next": "leap1"
+        },
+        {
+          "text": "Healing with magic?",
+          "next": "heal1"
+        },
+        {
+          "text": "Blasts of light? Like a mage?",
+          "next": "blast1"
+        },
+        {
+          "text": "I think I've heard enough. How do I use them?",
+          "next": "beforeend"
+        }
+      ]
+    },
+    "run1": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "According to one story, he outran a horse, though I am not sure if that one is true. The flash step- a poor wording if there ever was one- is likely true. There are a handful men who can do it today, and though I have not witnessed it personally the accounts are reliable. And Silvergleam is a relic from when magic was far more powerful.",
+      "next": "before4a"
+    },
+    "leap1": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "I suspect the bet is why the story persists to this day. Allegedly a defiant lordling who said he'd hand over his castle if Lord Ronn could leap over the tallest hovel outside of it. I doubt it was all that tall, but even still, an impressive feat.",
+      "next": "before4a"
+    },
+    "blast1": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "It is reasonable, in fact. There are similar stories, more widely known, about House Fallhammar's artifact, and there are mages with similar powers.",
+      "next": "before4a"
+    },
+    "heal1": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "That is not so surprising. Yes, it is a sword, but healing magic was once the most common magic, in the times when magic could be said to be common.",
+      "next": "before4a",
+      "choices": [
+        {
+          "text": "I could have saved my father!",
+          "next": "heal2"
+        },
+        {
+          "text": "Could I have saved my father?",
+          "next": "heal2"
+        },
+        {
+          "text": "Very well",
+          "next": "before4a"
+        }
+      ]
+    },
+    "heal2": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "Perhaps so, perhaps not. We do not know if this power was granted to every wielder of Silvergleam, or only Lord Ronn. You may not have been able to control this power, or it may not have been strong enough. What is done is done. You must not dwell on it, milady.",
+      "choices": [
+        {
+          "text": "You're right, it might not have worked.",
+          "next": "before4a"
+        },
+        {
+          "text": "I wish I could have tried",
+          "next": "before4a"
+        },
+        {
+          "text": "I know I could have done it!",
+          "next": "before4a"
+        },
+        {
+          "text": "I would have let him die anyway",
+          "next": "before4a"
+        }
+      ]
+    },
+    "beforeend": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "next": "beforeend2",
+      "text": "You must focus, think about what you are trying to do. You will discover new feelings, new... things. Like having another arm, but different. It's difficult to describe, and I am not a mage myself. But with practice, it should be as simple as swinging a blade."
+    },
+    "beforeend2": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "next": "beforeend3",
+      "image": "johann",
+      "text": "I can tell you little more than to try. Hopefully it will come to you naturally- Silvergleam is House Brukton's artifact and blood is powerful in magic."
+    },
+    "beforeend3": {
+      "type": "text",
+      "nameText": "Annake",
+      "image": "anneke",
+      "next": "meta.return",
+      "text": "I know you can do it, Briella!"
+    },
+    "real1": {
+      "type": "choice",
+      "text": "Hey. You alright? You kind of zoned out there.",
+      "next": "real1",
+      "choices": [
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "real2"
+        },
+        {
+          "text": "No, I'm not okay, I haven't been okay in like ever.",
+          "next": "real1a",
+          "microscript": [
+            {
+              "quest": "Sanity",
+              "add": -5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

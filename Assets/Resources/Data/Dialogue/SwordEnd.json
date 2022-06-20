@@ -1,0 +1,307 @@
+{
+  "background": "swordscene_endback",
+  "position": "character",
+  "default": "end1",
+  "frames": {
+    "end1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "Briella! By the gods, are you okay?",
+      "choices": [
+        {
+          "text": "I've never felt better. It's weird.",
+          "next": "end2"
+        },
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "end2"
+        },
+        {
+          "text": "I shouldn't be, but yes, I feel fine.",
+          "next": "end2"
+        }
+      ]
+    },
+    "end2": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end3",
+      "image": "anneke",
+      "text": "What happened to your hair?",
+      "nextText": "What?!"
+    },
+    "end3": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "Your hair, it's bright red now!",
+      "choices": [
+        {
+          "text": "No, it can't be. You have to be fooling with me.",
+          "next": "end3a"
+        },
+        {
+          "text": "I think that's blood.",
+          "next": "end3b"
+        },
+        {
+          "text": "It must be some kind of magic.",
+          "next": "end4"
+        }
+      ]
+    },
+    "end3a": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end4",
+      "image": "anneke",
+      "text": "It is, it truly is! Bright red! I swear it!",
+      "nextText": "If you insist..."
+    },
+    "end3b": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end4",
+      "image": "anneke",
+      "text": "No, it isn't! It's the wrong color! The blood is dry, it's icky browny crimson. Your hair's bright red! I swear it!",
+      "nextText": "If you insist..."
+    },
+    "end4": {
+      "type": "choice",
+      "nameText": "Annake",
+      "next": "end5",
+      "image": "anneke",
+      "text": "What happened, Briella? Did you try to wield Silvergleam again? You know father said it was forbidden.",
+      "choices": [
+        {
+          "text": "I did. I broke a promise, and I'm sorry.",
+          "next": "end5"
+        },
+        {
+          "text": "I did and I'd do it again. It's my right.",
+          "next": "end5",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I did. Father is dead, it doesn't matter anymore",
+          "next": "end5",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": -1
+            }
+          ]
+        }
+      ]
+    },
+    "end5": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end6",
+      "image": "anneke",
+      "text": "Did you wield it? Did it glow? Is it as light as a feather?",
+      "nextText": "Yes."
+    },
+    "end6": {
+      "type": "choice",
+      "nameText": "Annake",
+      "next": "end7",
+      "image": "anneke",
+      "text": "Oh, wow! I knew you could do it if you tried!",
+      "choices": [
+        {
+          "text": "Thanks for believing in me, little sis.",
+          "next": "end7",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 2
+            }
+          ]
+        },
+        {
+          "text": "I knew I could do it, too.",
+          "next": "end7",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I didn't think it would work, but I had to try.",
+          "next": "end7"
+        },
+        {
+          "text": "Believing is not the same as knowing.",
+          "next": "end6a",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": -1
+            }
+          ]
+        }
+      ]
+    },
+    "end6a": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end7",
+      "image": "anneke",
+      "text": "But it's never glowed for anyone else! When Father showed me, it didn't glow. Before Uncle died, when he had too much wine and tried it, it didn't do anything. But when you almost tried it on your birthday the gems glowed. Don't you remember?"
+    },
+    "end7": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "end8",
+      "image": "anneke",
+      "text": "Are you going to put on the armor? It's supposed to be magic, too, isn't it?",
+      "nextText": "Don't be silly, it won't fit me"
+    },
+    "end8": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "background": "swordscene_armor2",
+      "text": "Yes it will! Look, it's exactly your size! It must be magic. I think it'll look really good on you!",
+      "choices": [
+        {
+          "text": "I think it'll look good on me, too",
+          "next": "end9",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "You think <i>armor</i> would look good on me?",
+          "next": "armor1"
+        },
+        {
+          "text": "That shouldn't be possible. It's disturbing",
+          "next": "end9",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": -1
+            }
+          ]
+        },
+        {
+          "text": "Okay, if you insist.",
+          "next": "end9",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": -1
+            }
+          ]
+        }
+      ]
+    },
+    "armor1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "background": "swordscene_armor2",
+      "text": "Of course it will! I like pretty dresses with lots of fluffles but you always look so awkward in skirts. You'll look like a real warrior, and I bet it'll protect you from swords and arrows really good too. Oh, and it's Brukton purple!",
+      "choices": [
+        {
+          "text": "Yeah, you're right.",
+          "next": "end9",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I guess if you put it that way...",
+          "next": "end9"
+        },
+        {
+          "text": "Hey! Was that an insult or a compliment?",
+          "next": "armor1a",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": -1
+            }
+          ]
+        }
+      ]
+    },
+    "armor1a": {
+      "type": "text",
+      "nameText": "Annake",
+      "image": "anneke",
+      "background": "swordscene_armor2",
+      "text": "It was a compliment, really!",
+      "next": "end9"
+    },
+    "end9": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "meta.return",
+      "background": "swordscene_armor2",
+      "image": "anneke",
+      "text": "Don't wait for me! I'll go get Johann, he's smart and he'll know more about Silvergleam for sure."
+    },
+    "real1": {
+      "type": "choice",
+      "text": "Hey. You alright? You kind of zoned out there.",
+      "next": "real1",
+      "choices": [
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "real2"
+        },
+        {
+          "text": "No, I'm not okay, I haven't been okay in like ever.",
+          "next": "real1a",
+          "microscript": [
+            {
+              "quest": "Sanity",
+              "add": -5
+            }
+          ]
+        }
+      ]
+    },
+    "father10": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I want you to promise me. ",
+      "choices": [
+        {
+          "text": "Goodbye, father. I hate you.",
+          "next": "father_altend"
+        },
+        {
+          "text": "No. I won't do it. I'm sorry.",
+          "next": "father10a"
+        },
+        {
+          "text": "No promises. But I'll try to save our house.",
+          "next": "father10b"
+        },
+        {
+          "text": "I promise, father.",
+          "next": "father10c"
+        }
+      ]
+    }
+  }
+}

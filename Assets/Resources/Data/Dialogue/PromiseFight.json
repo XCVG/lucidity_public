@@ -1,0 +1,111 @@
+{
+  "background": "intro_trainingyard",
+  "position": "character",
+  "default": "train1",
+  "frames": {
+    "train1": {
+      "type": "text",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "next": "train2",
+      "nextText": "Very well, I accept your yield, Sir Rodebert.",
+      "text": "I yield, I yield!"
+    },
+    "train2": {
+      "type": "choice",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "Are we still pretending? I'm not Sir Rodebert The Righteous any more than you're Sir Briella The Bold.",
+      "choices": [
+        {
+          "text": "I like pretending.",
+          "next": "train3a"
+        },
+        {
+          "text": "We can dream, can't we?",
+          "next": "train3a"
+        },
+        {
+          "text": "Maybe we will be someday.",
+          "next": "train3c"
+        }
+      ]
+    },
+    "train3c": {
+      "type": "choice",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "Ha, sure. Neither of us are knights, we're not even squires training to be knights. I'm just a smithy's apprentice, and you're just a girl. We just cross swords and pretend because we've got big stupid dreams.",
+      "choices": [
+        {
+          "text": "Yeah, I guess.",
+          "next": "train4"
+        },
+        {
+          "text": "I'm not <i>just</i> a girl, you're not <i>just</i> a smithy's apprentice.",
+          "next": "train4"
+        },
+        {
+          "text": "Dreams can come true.",
+          "microscript": [
+            {
+              "flag": "IntroDidPromiseKnighthood",
+              "set": true
+            }
+          ],
+          "next": "train4"
+        }
+      ]
+    },
+    "train3a": {
+      "type": "choice",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "We gotta grow up someday, don't we? They say I'm not going to be an apprentice much longer. And you a woman grown, you're going to marry soon, be a proper lady. No more of this crossing blunt swords with the smithy boy in the mud.",
+      "choices": [
+        {
+          "text": "I'm going to miss it.",
+          "next": "train4"
+        },
+        {
+          "text": "Ugh, can we not talk about that?",
+          "next": "train4"
+        },
+        {
+          "text": "It doesn't have to end.",
+          "next": "train4"
+        }
+      ]
+    },
+    "train4": {
+      "type": "text",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "Sure, Bri.",
+      "next": "train5"
+    },
+    "train5": {
+      "type": "choice",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "Have you talked to your father yet? You said he was going to have a good long talk with you after he got back from hunting bandits, and I saw him ride back through the gates yesterday.",
+      "choices": [
+        {
+          "text": "No, but I will today",
+          "next": "train6"
+        },
+        {
+          "text": "I've kind of been putting it off",
+          "next": "train6"
+        }
+      ]
+    },
+    "train6": {
+      "type": "text",
+      "nameText": "Rodebert",
+      "image": "stableboy",
+      "text": "Well, I've got to get back to the forge. You should speak to your father. Not sure which one of us has the worse deal, but that's how it is.",
+      "next": "meta.return"
+    }
+  }
+}

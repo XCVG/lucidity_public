@@ -1,0 +1,176 @@
+{
+  "background": "garricktower_confront",
+  "position": "character",
+  "default": "dance1",
+  "frames": {
+    "dance1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "So, all the rumours are true, then.",
+      "choices": [
+        {
+          "text": "Yup.",
+          "next": "dance2"
+        },
+        {
+          "text": "Really, what clued you in?",
+          "next": "dance2"
+        },
+        {
+          "text": "Which rumours?",
+          "next": "dance1a"
+        }
+      ]
+    },
+    "dance1a": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "Lady Briella Brukton, the <i>magical girl</i> who somehow could wield her family's artifact. Ronn The Great reborn, but as a girl. Ha! The gods are mummers.",
+      "next": "dance2"
+    },
+    "dance2": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "I'm willing to come to an agreement. An end to this spat, not just for the moment but a lasting agreement. I will pull my armies back, and you may take Lar's hand in marraige",
+      "choices": [
+        {
+          "text": "If you're going to offer terms, at least offer <i>good</i> terms.",
+          "next": "dance3"
+        },
+        {
+          "text": "Yeah, I don't think Lar is going to be marrying anyone...",
+          "next": "larend",
+          "microscript": [
+            {
+              "flag": "DanceConfrontToldAboutLar",
+              "set": true
+            }
+          ]
+        },
+        {
+          "text": "No deal, Garrick. Draw your sword.",
+          "next": "nodealend"
+        },
+        {
+          "text": "You're afraid of me, aren't you?",
+          "next": "scared1"
+        }
+      ]
+    },
+    "dance3": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "Fine. Forget Lar, he's a lout and you'd probably stab him the first night anyway. You may take my son, Anton, as a ward, and I will cede all my territories adjacent to the river to your house.",
+      "choices": [
+        {
+          "text": "Okay. I'll take it.",
+          "next": "deal1"
+        },
+        {
+          "text": "No deal, Garrick. Draw your sword.",
+          "next": "nodealend"
+        },
+        {
+          "text": "You're afraid of me, aren't you?",
+          "next": "scared1"
+        }
+      ]
+    },
+    "deal1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "You would like that, wouldn't you? Were you a true lord, we would make this accord. But if I handed over my hold to you, a <i>girl</i>, it would be the end of me. My people would no longer follow me, Lord Westerhold would likely remove me.",
+      "microscript": [
+        {
+          "flag": "DanceConfrontHeardSexism",
+          "set": true
+        }
+      ],
+      "choices": [
+        {
+          "text": "Really? You're still caught up on my <i>gender</i>?",
+          "next": "gender1"
+        },
+        {
+          "text": "Well, I wasn't going to take it anyway.",
+          "next": "nodealend"
+        },
+        {
+          "text": "You're afraid of me, aren't you?",
+          "next": "scared1"
+        }
+      ]
+    },
+    "gender1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "Man is made to fight and to rule. Woman is made to birth and to serve. You will never be my equal, Briella, nor will you ever be Lord Brukton. You're just a delusional girl.",
+      "microscript": [
+        {
+          "flag": "DanceConfrontHeardSexism",
+          "set": true
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fuck you, Garrick.",
+          "next": "nodealend"
+        },
+        {
+          "text": "I'm not your equal, I'm your <i>better</i>.",
+          "next": "nodealend"
+        },
+        {
+          "text": "Shut your mouth and draw your sword.",
+          "next": "nodealend"
+        }
+      ]
+    },
+    "scared1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "Scared? Hardly! Beneath that fancy armor and that magic sword, you're still just a girl. You can pretend all you want, but you will never be a knight and you will never be Lord Brukton.",
+      "microscript": [
+        {
+          "flag": "DanceConfrontHeardSexism",
+          "set": true
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fuck you, Garrick.",
+          "next": "nodealend"
+        },
+        {
+          "text": "I'm a girl, but I'm not <i>just</i> a girl.",
+          "next": "nodealend"
+        },
+        {
+          "text": "Shut your mouth and draw your sword.",
+          "next": "nodealend"
+        }
+      ]
+    },
+    "larend": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "You killed him, didn't you, you <b>bitch</b>! He may have been an asshole, but he was my blood! I won't stand for this!",
+      "next": "meta.return"
+    },
+    "nodealend": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "rigan",
+      "text": "You may have Silvergleam, but you're still just a scared little girl. I've swung a sword for thirty years. You won't walk away from this.",
+      "next": "meta.return"
+    }
+  }
+}

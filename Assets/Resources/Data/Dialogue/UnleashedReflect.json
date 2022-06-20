@@ -1,0 +1,369 @@
+{
+  "background": "trainingyard",
+  "position": "character",
+  "default": "reflect1",
+  "frames": {
+    "reflect1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "You're back! Some of the guards were worried, but I knew you'd make it back just fine! Oh, I forgot to tell you this before, so I'm telling you now: you look great in your armor! Did you kill all the bandits, Briella?",
+      "choices": [
+        {
+          "text": "Yes, but it's not something to be proud of",
+          "next": "reflect2",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Hells yeah I did",
+          "next": "reflect3",
+		  "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    "reflect2": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "Why not? They were hurting people and now they're not going to be hurting anyone anymore.",
+      "choices": [
+        {
+          "text": "Taking a life is a tragedy, even a criminal's life",
+          "next": "reflect4",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Justice at the end of a sword is hardly justice at all",
+          "next": "reflect4",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I guess if you put it that way...",
+          "next": "reflect3"
+        }
+      ]
+    },
+    "reflect3": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "reflect5",
+      "image": "anneke",
+      "text": "Now all those people in the village are safe! And it was because of you, Briella! Now they know that you'll protect them even though you're the Lady Brukton and not the Lord Brukton."
+    },
+    "reflect4": {
+      "type": "text",
+      "nameText": "Annake",
+      "next": "reflect5",
+      "image": "anneke",
+      "text": "Maybe, but now all those people are safe, and they're safe because of you! Besides, I know you'll never kill anyone who doesn't deserve it, because you're my big sister and you're the fairest person I know."
+    },
+    "reflect5": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect6",
+      "text": "She is wise beyond her years in many ways, but still too young to understand, and she adores you no matter what. Odd, considering your differences. But I see the look in your eyes.",
+      "nextText": "The look of what?"
+    },
+    "reflect6": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect7",
+      "text": "The look of someone who has taken a life and who feels the gravity of it. I am sorry that you had to do so, but I am glad to see it. There are a few who kill without remorse, and they are monsters. I can tell by that look that you are no monster, but someday you may become one.",
+      "nextText": "The look of what?",
+      "choices": [
+        {
+          "text": "I'm fine. There's no \"look in my eyes\".",
+          "next": "reflect6a",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -4
+            }
+          ]
+        },
+        {
+          "text": "What was that about monsters?",
+          "next": "reflect7"
+        },
+        {
+          "text": "I thought you were against this from the beginning?",
+          "next": "against1"
+        }
+      ]
+    },
+    "against1": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect7",
+      "text": "I was against this diversion against banditry. I was not against you fighting in any capacity. Sooner or later- I had hoped later- you would need to take up arms, and sooner or later, you would need to take a life."
+    },
+    "reflect7": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect8",
+      "text": "For some men, the first kill comes easy. For most, it does not. But for them it gets easier each time, more natural, more normal. Some monsters were born good men, and became monsters.",
+      "choices": [
+        {
+          "text": "But I'm not a man, I'm a woman",
+          "next": "reflect7w",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -1
+            }
+          ]
+        },
+        {
+          "text": "It was easier than you think. He deserved it.",
+          "next": "reflect7z",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -2
+            }
+          ]
+        },
+        {
+          "text": "It wasn't easy for me. I'm still a bit sick.",
+          "next": "reflect7a",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Do you have any advice for me?",
+          "next": "reflect8"
+        }
+      ]
+    },
+    "reflect7z": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect8",
+      "text": "I urge caution, milady. Perhaps you are right, perhaps he did deserve it. But what of the next man who faces your sword? He may very well deserve it. Or perhaps he may not. You are exceptionally powerful, but not immune to the foibles of humanity. I will acknowledge that you can do incredible good. But you could also do incredible evil, and I fear that you may not understand the difference until it is too late."
+    },
+    "reflect7w": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect8",
+      "text": "I speak in generalizations, milady. There have been few fighting women, and none I know of with your power. The examples I have are all men, but I have no reason to believe your gender makes any difference here."
+    },
+    "reflect7a": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "reflect8",
+      "text": "That is a good thing, in my mind. Perhaps the men you killed did deserve their fate. Perhaps they did not. I was not there, and I cannot judge them. Have faith in yourself, but also have restraint, and understand what it means to take a life."
+    },
+    "reflect8": {
+      "type": "choice",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "guard1",
+      "text": "There will be blood on your hands again. Sometimes to kill is a necessity, and you will have to live with that. I advise that you must always consider the consequences of your actions and your effects on others. If you heed nothing else I say, heed that advice. You have a power in you- a gift, really, but a gift that could cause so much harm if you are not careful with it.",
+      "choices": [
+        {
+          "text": "Actually, I'm pretty sure these gloves are blood-proof",
+          "next": "reflect8a",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -1
+            }
+          ]
+        },
+        {
+          "text": "My powers could be misused. I shall heed your advice.",
+          "next": "reflect9",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 3
+            }
+          ]
+        },
+        {
+          "text": "Don't worry, I've got this",
+          "next": "reflect6a",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -2
+            }
+          ]
+        }
+      ]
+    },
+    "reflect8a": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "guard1",
+      "text": "Please, milady, heed my advice. That is all I ask."
+    },
+    "reflect9": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "guard1",
+      "text": "Thank you, milady. That is all I ask."
+    },
+    "reflect6a": {
+      "type": "text",
+      "nameText": "Johann",
+      "image": "johann",
+      "next": "guard1",
+      "microscript": [
+        {
+          "flag": "UnleashedDidBeArrogant",
+          "set": true
+        }
+      ],
+      "text": "Of course, milady. Forgive me, I did not mean to presume."
+    },
+    "guard1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "next": "guard2",
+      "text": "I never thought I'd see anything like that, milady! You left all us guardsmen in the dust, and I reckon you'd do the same to a knight, too. You're like Ronn The Great with teats.",
+      "choices": [
+        {
+          "text": "Call me that again...",
+          "next": "guard2a"
+        },
+        {
+          "text": "That's right, I'm awesome",
+          "next": "guard2b",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -1
+            }
+          ]
+        },
+        {
+          "text": "I think that's going a little far",
+          "next": "guard2c",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    "guard2a": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "next": "guard3",
+      "text": "Beg pardon, milady. I wasn't trying to offend, no, certainly wouldn't want to offend you!"
+    },
+    "guard2b": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "next": "guard3",
+      "text": "I'm in awe, and so are the rest of the guards, milady. We'd follow you any day, into anything."
+    },
+    "guard2c": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "next": "guard3",
+      "text": "Is it, milady? No man has seen a warrior all their life, and not their fathers or their fathers fathers. No one in the service of House Brukton has seen anything like it since Ronn The Great."
+    },
+    "guard3": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "next": "annae1",
+      "text": "Now, we may have gotten rid of those bandits, but there are more. Things have been getting bad under the last few Lords Garrick. Stabbing a few brigands will be great practice for when things <i>really</i> heat up, I think. Now I'm just a guardsman, but I humbly ask you to once again take up arms and protect your people. Milady."
+    },
+    "annae1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "next": "guard4",
+      "text": "Get out there, Briella! You can protect the people and make our lands safe for everyone!",
+      "choices": [
+        {
+          "text": "Oh, I'd love to kick some more criminal ass",
+          "next": "meta.return",
+		  "microscript": [
+            {
+              "variable": "UnleashedReflectPositivity",
+              "add": -1
+            }
+          ]
+        },
+        {
+          "text": "Of course, I'll do it",
+          "next": "meta.return"
+        },
+        {
+          "microscript": [
+            {
+              "flag": "UnleashedWasReluctant",
+              "set": true
+            }
+          ],
+          "text": "If I must...",
+          "next": "meta.return"
+        }
+      ]
+    },
+    "real1": {
+      "type": "choice",
+      "text": "Hey. You alright? You kind of zoned out there.",
+      "next": "real1",
+      "choices": [
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "real2"
+        },
+        {
+          "text": "No, I'm not okay, I haven't been okay in like ever.",
+          "next": "real1a",
+          "microscript": [
+            {
+              "quest": "Sanity",
+              "add": -5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

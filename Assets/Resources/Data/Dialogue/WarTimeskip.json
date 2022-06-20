@@ -1,0 +1,180 @@
+{
+  "background": "trainingyard",
+  "position": "character",
+  "default": "skip1",
+  "frames": {
+    "skip1": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "The village of Kelnbend was burned, milady. That's the first village we've seen burned in weeks. They say it was quick, and it was brutal. They came in the morning, killed the men, took the women, stole what they could, and burned the village before noon.",
+      "choices": [
+        {
+          "text": "And you think it isn't bandits this time?",
+          "next": "skip2",
+          "conditional": [
+            {
+              "next": "skip2",
+              "conditions": []
+            },
+            {
+              "next": "skip2a",
+              "conditions": [
+                {
+                  "noflag": "UnleashedWasReluctant"
+                },
+                {
+                  "flag": "UnleashedDidBeArrogant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I don't care who it is, I can take them",
+          "next": "skip3"
+        }
+      ]
+    },
+    "skip2": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Well, they didn't act much like bandits, with what they did, and a few villagers that escaped say they looked and talked like Garrick men.",
+      "next": "skip3"
+    },
+    "skip2a": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Not a lot of bandits left to do much of anything, not with you striking 'em down. But they didn't act much like bandits, and a few villagers that escaped say they looked and talked like Garrick men.",
+      "next": "skip3"
+    },
+    "skip3": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "That's not the big problem, though. Got a message from one of our scouts, just today. There's an army, Lord Garrick's army or at least someone flying his standards, marching on the old watchtower.",
+      "next": "skip3",
+      "choices": [
+        {
+          "text": "Let's get moving, then!",
+          "next": "skip4"
+        },
+        {
+          "text": "We need to send a message to Lord Westerhold.",
+          "next": "skip3a"
+        },
+        {
+          "text": "That's not good. What's our plan?",
+          "next": "skip3c"
+        },
+        {
+          "text": "Who cares, the old watchtower is burnt and useless",
+          "next": "skip3b"
+        }
+      ]
+    },
+    "skip3a": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Aye, you're right about that, but I doubt he'll get it before that army's on top of us, and it'll take him at least a week to march his own. And if Lord Garrick is marching, I don't think he's much afraid of our shared liege lord.",
+      "next": "skip4"
+    },
+    "skip3b": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "It is, sure, but right past the old watchtower is the bridge, then Yohn's Crossing, then up the road right to our gates. I'm not so sure Lord Garrick will stop at the watchtower, milady.",
+      "next": "skip4"
+    },
+    "skip3c": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "You're the Lady Brukton. The plan's up to you.",
+      "next": "skip4"
+    },
+    "skip4": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Us guardsmen might not be much of an army, but we're ready to fight. Your word is our command, milady.",
+      "choices": [
+        {
+          "text": "Defend Castle Brukton. I can handle the army on my own!",
+          "next": "noguards",
+          "microscript": [
+            {
+              "flag": "WarFormationNoGuards",
+              "set": true
+            }
+          ]
+        },
+        {
+          "text": "Stay behind me. I'll lead the charge!",
+          "next": "forward",
+          "microscript": [
+            {
+              "flag": "WarFormationForward",
+              "set": true
+            }
+          ]
+        },
+        {
+          "text": "Your men in front, I'll bring up the rear!",
+          "next": "rear",
+          "microscript": [
+            {
+              "flag": "WarFormationRear",
+              "set": true
+            }
+          ]
+        }
+      ]
+    },
+    "noguards": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "It'll be an easy victory for you, milady. We'll keep the castle and your sister safe until you return.",
+      "next": "meta.return"
+    },
+    "forward": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Right behind you, milady. We'll get the stragglers, if you're kind enough to leave a few for us.",
+      "next": "meta.return"
+    },
+    "rear": {
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Of course, milady. Try not to hit any of us, if it please you.",
+      "next": "meta.return"
+    },
+    "real1": {
+      "type": "choice",
+      "text": "Hey. You alright? You kind of zoned out there.",
+      "next": "real1",
+      "choices": [
+        {
+          "text": "Yeah, I'm fine.",
+          "next": "real2"
+        },
+        {
+          "text": "No, I'm not okay, I haven't been okay in like ever.",
+          "next": "real1a",
+          "microscript": [
+            {
+              "quest": "Sanity",
+              "add": -5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

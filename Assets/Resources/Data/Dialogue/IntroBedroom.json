@@ -1,0 +1,413 @@
+{
+  "background": "bedroom",
+  "position": "character",
+  "default": "healer1",
+  "frames": {
+    "father10": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I want you to promise me. ",
+      "choices": [
+        {
+          "text": "Goodbye, father. I hate you.",
+          "next": "father_altend"
+        },
+        {
+          "text": "No. I won't do it. I'm sorry.",
+          "next": "father10a"
+        },
+        {
+          "text": "No promises. But I'll try to save our house.",
+          "next": "father10b"
+        },
+        {
+          "text": "I promise, father.",
+          "next": "father10c"
+        }
+      ]
+    },
+    "healer1": {
+      "background": "bedroomdoor",
+      "type": "choice",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "image": "healer",
+      "next": "healer2",
+      "text": "I know you wish to see your father, milady, but his condition has taken a bad turn. I fear he has little time left.",
+      "choices": [
+        {
+          "text": "What? He was just fine yesterday!",
+          "next": "healer1a"
+        },
+        {
+          "text": "Thank you for the warning. I must see him, even if it is difficult.",
+          "next": "healer_end"
+        },
+        {
+          "text": "Thank you for the warning, but I can handle it.",
+          "next": "healer_end"
+        },
+        {
+          "text": "Just let me see him!",
+          "next": "healer_end_a"
+        }
+      ]
+    },
+    "healer1a": {
+      "background": "bedroomdoor",
+      "type": "choice",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "image": "healer",
+      "text": "I do not know if you are aware, but he took an arrow wound while fighting bandits. It was a minor wound, but sometimes wounds corrupt, especially battlefield wounds. I have done all I can.",
+      "choices": [
+        {
+          "text": "What's wrong with him?",
+          "next": "healer2"
+        },
+        {
+          "text": "Oh, I see.",
+          "next": "healer_end"
+        },
+        {
+          "text": "You're useless!",
+          "next": "healer_end_a"
+        }
+      ]
+    },
+    "healer2": {
+      "type": "choice",
+      "background": "bedroomdoor",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "image": "healer",
+      "next": "healer2",
+      "text": "Are you sure you wish to know? It is not for the stomach of a lady. I covered him so you would not have to see.",
+      "choices": [
+        {
+          "text": "You're right. But I do need to see him.",
+          "next": "healer_end"
+        },
+        {
+          "text": "Please, tell me. [WARNING: graphic content]",
+          "next": "healer3"
+        }
+      ]
+    },
+    "healer3": {
+      "type": "choice",
+      "background": "bedroomdoor",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "image": "healer",
+      "text": "The arrow pierced just behind his left patella. It seemed a flesh wound, though it bled badly, and one of his men pulled the arrow out and stitched it. But it is a delicate joint, and the rot set in. When I reopened the stitches to redo them, pus flowed freely. I wished to take his leg, but he refused. I cleaned the wound as best I could, but it did not heal. Now the corruption has spread, he runs a fever, and is too weak to take food. Every man in that condition sees the Gates sooner than later.",
+      "choices": [
+        {
+          "text": "Ew! Why did you go into so much detail?",
+          "next": "healer_end"
+        },
+        {
+          "text": "I understand.",
+          "next": "healer_end"
+        },
+        {
+          "text": "Wait... so you're saying...",
+          "next": "healer_skyrim"
+        }
+      ]
+    },
+	"healer_skyrim": {
+      "type": "text",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "background": "bedroomdoor",
+      "image": "healer",
+      "next": "healer_end",
+      "text": "He used to be a lord until he took an arrow in the knew. There, I said it. Are you fucking sorry? Have you realized that Skyrim came out almost a decade ago."
+    },
+    "healer_end": {
+      "type": "text",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "background": "bedroomdoor",
+      "image": "healer",
+      "next": "father1",
+      "text": "Sit with your father, but say what you must with haste, milady. He has very little time left."
+    },
+    "healer_end_a": {
+      "type": "text",
+      "nameText": "<l:LUCIDITY:HealerName>",
+      "background": "bedroomdoor",
+      "image": "healer",
+      "next": "father1",
+      "text": "Very well. I shall take my leave, then."
+    },
+    "father1": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father2",
+      "text": "Briella. My little lady. No... the Lady Brukton now. Or by the next rise of the sun, I fear."
+    },
+    "father2": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father3",
+      "text": "There is so little time. All the things I wanted to... it's no matter now. I need you do be strong for me, and I need you to listen closely.",
+      "choices": [
+        {
+          "text": "I've always been strong.",
+          "next": "father2a"
+        },
+        {
+          "text": "Of course, father.",
+          "next": "father3"
+        },
+        {
+          "text": "I'll try my best.",
+          "next": "father3"
+        }
+      ]
+    },
+    "father2a": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father3",
+      "text": "Playing with sticks and running around in muddy trousers is not strength. My passing will hurt you, but then you must bear the weight of our House, and bear so many things to preserve it."
+    },
+    "father3": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father4",
+      "text": "Rigan. The fucker.",
+      "nextText": "Lord Garrick? What about him?"
+    },
+    "father4": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father4",
+      "text": "He wants our lands for himself. He won't do it while I'm still alive, but the moment I'm dead, he'll march his army. Heh. I always figured I'd meet my end at his hand, not a bunch of bandits and a bad wound.",
+      "choices": [
+        {
+          "text": "Won't Lord Westerhold intervene?",
+          "next": "father4a"
+        },
+        {
+          "text": "House Garrick has <i>always</i> wanted our lands.",
+          "next": "father5"
+        },
+        {
+          "text": "We have bannermen of our own, don't we?",
+          "next": "father5"
+        }
+      ]
+    },
+    "father4a": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father5",
+      "text": "Hah! Lord Westerhold won't lift a finger unless someone threatens <i>his</i> lands. Two of his vassals? He'll let them fight it out until one is dead and the other is dead tired, then pretend to to congratulate the victor while raising his tithe.",
+      "nextText": "Oh..."
+    },
+    "father5": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father6",
+      "text": "Aye, and there has always been a Lord Brukton, by blood or by marraige. This will the first time- the first time anyone can remember, anyway- without a lord to lead our armies and defend our land.",
+      "choices": [
+        {
+          "text": "I could style myself Lord and do it!",
+          "next": "father6"
+        },
+        {
+          "text": "Does it have to be a <i>Lord</i> Brukton?",
+          "next": "father6"
+        },
+        {
+          "text": "Oh. That is a dire situation.",
+          "next": "father7"
+        }
+      ]
+    },
+    "father6": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father7",
+      "text": "Don't be stupid, girl. Now is not the time for your flights of fancy."
+    },
+    "father7": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father8",
+      "text": "You must marry, and soon. Your uncles are dead; you and Annake are the last of our line. It is not ideal, but the right man could preserve our house, and your children will be true Bruktons.",
+      "choices": [
+        {
+          "text": "No. I won't do it.",
+          "next": "father7a"
+        },
+        {
+          "text": "Who could I marry?",
+          "next": "father8"
+        },
+        {
+          "text": "Of course, father. I shall marry a good man.",
+          "next": "father7z"
+        }
+      ]
+    },
+    "father7z": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father7a",
+      "text": "You've always been a terrible liar, Briella."
+    },
+    "father7a": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father8",
+      "text": "I know you do not wish to marry. I know you do not look forward to the life of a lady. I am not blind, child. But your mother before you, and her mother before her, all were ladies. It will not be so bad. And you must, for our house to survive.",
+      "choices": [
+        {
+          "text": "Mother died in childbed. I barely knew her.",
+          "next": "father7b"
+        },
+        {
+          "text": "I don't care. I won't do it.",
+          "next": "father7aa"
+        },
+        {
+          "text": "I understand.",
+          "next": "father8"
+        }
+      ]
+    },
+    "father7b": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "next": "father8",
+      "text": "The burden of a lady.",
+      "choices": [
+        {
+          "text": "Goodbye, father. I hate you.",
+          "next": "father_altend"
+        },
+        {
+          "text": "No! I refuse to be what you tell me to be!",
+          "next": "father_altend"
+        },
+        {
+          "text": "I guess I have to bear that burden then.",
+          "next": "father8"
+        }
+      ]
+    },
+    "father7aa": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "Briella, please! Our lands will be taken, our house will die out if you do not do your duty.",
+      "choices": [
+        {
+          "text": "Let it die. What have I ever gotten from it?",
+          "next": "father_altend"
+        },
+        {
+          "text": "Goodbye, father. I hate you.",
+          "next": "father_altend"
+        },
+        {
+          "text": "I'm sorry. I'll try. This is all hard news to bear.",
+          "next": "father8"
+        }
+      ]
+    },
+    "father8": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "There are a few highborn men I have in mind. Sir Martin was to be your betrothed. You embarassed him badly, but with a good dowry I think an agreement could be made again. Tomas Osman may be a lord in name only, but he is a good man, and once a champion fighter. Lord Sunstorm is old, but his seed is still strong, and his army. Or... there is another option.",
+      "choices": [
+        {
+          "text": "Okay, some of them sound not so bad.",
+          "next": "father9"
+        },
+        {
+          "text": "I don't want to marry any of them.",
+          "next": "father9"
+        },
+        {
+          "text": "What's the other option?",
+          "next": "father8a"
+        }
+      ]
+    },
+    "father8a": {
+      "type": "choice",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I believe a marraige pact could be made with Lord Garrick. As much as I loathe to admit it, he is a pragmatic man. He will see this as gaining our lands without bloodshed. Your children will be Bruktons in blood if not in name, and perhaps you could marry your children to Anneke's children should she have them.",
+      "choices": [
+        {
+          "text": "Are you serious? That's an even worse option!",
+          "next": "father9"
+        },
+        {
+          "text": "I guess that makes sense.",
+          "next": "father9"
+        },
+        {
+          "text": "That might be a good idea.",
+          "next": "father9"
+        }
+      ]
+    },
+    "father9": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I do not ask that you like it, only that you do your duty. Please, for your house and your dying father.",
+      "next": "father10"
+    },
+    "father10a": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I am sorry as well. I had hoped you would see sense. Perhaps you still will. Goodbye, my daughter. ",
+      "next": "meta.return"
+    },
+    "father10b": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I suppose that is the best I can ask for. I am sorry it had to come to this. Goodbye, my daughter. ",
+      "next": "meta.return"
+    },
+    "father10c": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "I am so sorry it had to come to this. Thank you, my daughter. ",
+      "next": "meta.return"
+    },
+    "father_altend": {
+      "type": "text",
+      "nameText": "Lord Brukton",
+      "image": "marcus",
+      "text": "Go, then! Let me die in peace. Gods curse you, wretched daughter...",
+      "next": "meta.return",
+      "microscript": [
+        {
+          "flag": "IntroDidDisappointFather",
+          "set": true
+        }
+      ]
+    }
+  },
+  "music": "sadness"
+}

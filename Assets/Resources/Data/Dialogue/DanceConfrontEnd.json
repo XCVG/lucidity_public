@@ -1,0 +1,135 @@
+{
+  "background": "garricktower_confront",
+  "position": "character",
+  "default": "dance1",
+  "frames": {
+    "dance1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "Please, stop! I yield, I yield!",
+      "choices": [
+        {
+          "text": "No. You had your chance.",
+          "next": "kill1"
+        },
+        {
+          "text": "Very well. I accept your surrender.",
+          "next": "surrender1"
+        },
+        {
+          "text": "Am I still <i>just a scared little girl</i>?",
+          "next": "dance1a",
+          "showCondition": {
+            "flag": "DanceConfrontHeardSexism"
+          }
+        }
+      ]
+    },
+    "dance1a": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "No, it was a poor choice of words, I didn't think- I just didn't think. Mercy, have mercy!",
+      "choices": [
+        {
+          "text": "No mercy. You had your chance.",
+          "next": "kill1"
+        },
+        {
+          "text": "Very well. I accept your surrender.",
+          "next": "surrender1"
+        }
+      ]
+    },
+    "kill1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "No, you cannot, you must accept, I have yielded! My castle, my lands, my men, they are yours. I will do as your word commands. Please, have mercy!",
+      "choices": [
+        {
+          "text": "<b>Kill Lord Garrick</b>",
+          "next": "kill2"
+        },
+        {
+          "text": "Very well. I accept your surrender.",
+          "next": "surrender1"
+        },
+        {
+          "text": "Did you just shit yourself?",
+          "next": "shit1"
+        }
+      ]
+    },
+    "shit1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "Yes, I have voided my bowels. I am scared, I will admit it, I am a scared old man. You inspire fear in your enemies, I never thought I would say it but truly you do!",
+      "choices": [
+        {
+          "text": "You admit it? I can't actually smell anything in this suit.",
+          "next": "shit2"
+        },
+        {
+          "text": "Damn straight.",
+          "next": "shit2"
+        },
+        {
+          "text": "Yeah, I'm not listening to you anymore.",
+          "next": "shit2"
+        }
+      ]
+    },
+    "shit2": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "I have yielded, all of mine is yours. Please, accept my surrender, have mercy.",
+      "choices": [
+        {
+          "text": "<b>Kill Lord Garrick</b>",
+          "next": "kill2"
+        },
+        {
+          "text": "I accept your surrender.",
+          "next": "surrender1"
+        }
+      ]
+    },
+    "kill2": {
+      "type": "text",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "No!",
+      "next": "meta.return",
+      "microscript": [
+        {
+          "flag": "DanceConfrontDidKillRigan",
+          "set": true
+        }
+      ]
+    },
+    "surrender1": {
+      "type": "choice",
+      "nameText": "Lord Garrick",
+      "image": "riganhurt",
+      "text": "Thank you, thank you, my lord, thank you for having mercy. As I have said, all of mine is now yours. I am yours to command, and your flag will soon fly over your new lands.",
+      "choices": [
+        {
+          "text": "Don't make me regret this.",
+          "next": "meta.return"
+        },
+        {
+          "text": "Finally, some recognition!",
+          "next": "meta.return"
+        },
+        {
+          "text": "Rise, Rigan. You fought honorably.",
+          "next": "meta.return"
+        }
+      ]
+    }
+  }
+}

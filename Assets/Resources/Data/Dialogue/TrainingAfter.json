@@ -1,0 +1,236 @@
+{
+  "background": "trainingyard",
+  "position": "character",
+  "default": "extra1",
+  "frames": {
+    "extra1": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "Very impressive indeed. A thought occurred to me: did you find your armor uncomfortable at all?",
+      "choices": [
+        {
+          "text": "Are you kidding? It's very comfortable.",
+          "next": "extra2"
+        },
+        {
+          "text": "No, it fits fine.",
+          "next": "extra2"
+        },
+        {
+          "text": "Not really, why?",
+          "next": "extra2"
+        }
+      ]
+    },
+    "extra2": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "Lord Ronn The Great rarely wore the Brukton armor despite its supposed protective qualities. In a few surviving journal entries he mentioned that it was far less comfortable to wear than a normal set of armor. Which seemed odd to me given its magical fitment. No matter. Your newfound abilities are a far more important matter.",
+      "next": "after1"
+    },
+    "after1": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "Yeah, you were really amazing!",
+      "choices": [
+        {
+          "text": "Thanks, that means a lot to me.",
+          "next": "after2",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 2
+            }
+          ]
+        },
+        {
+          "text": "I feel amazing!",
+          "next": "after2",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "I don't know. It's a scary amount of power.",
+          "next": "after1a"
+        }
+      ]
+    },
+    "after1a": {
+      "type": "choice",
+      "nameText": "Annake",
+      "image": "anneke",
+      "text": "I'm not scared, because you're the one with the magical powers! I know you'll use them to help good people and not do evil things.",
+      "choices": [
+        {
+          "text": "Thank you for believing in me",
+          "next": "after2",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 2
+            }
+          ]
+        },
+        {
+          "text": "I guess you're right",
+          "next": "after2"
+        }
+      ]
+    },
+    "after2": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Amazing is a word for it. I've never seen anyone fight like that, much less a woman. I know it's my duty, mine and the rest of the guard, to protect you, but I'd sooner let you lead the charge, like your lord father did. Even though you're the Lady Brukton and not the Lord Brukton.",
+      "choices": [
+        {
+          "text": "I would have done that even without these powers",
+          "next": "after3",
+          "microscript": [
+            {
+              "variable": "AnnekeInspire",
+              "add": 1
+            }
+          ]
+        },
+        {
+          "text": "Thanks, I guess",
+          "next": "after3"
+        },
+        {
+          "text": "I still expect you to do your duty",
+          "next": "after2a"
+        }
+      ]
+    },
+    "after2a": {
+      "type": "text",
+      "next": "after3",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Of course, milady. Nothing bad will happen to you on my watch, I swear it."
+    },
+    "after3": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Now, if you excuse my maybe speaking out of line, we could really use your help. The guard, I mean.",
+      "choices": [
+        {
+          "text": "Sure, no problem",
+          "next": "after4"
+        },
+        {
+          "text": "That depends, what are you asking?",
+          "next": "after4"
+        },
+        {
+          "text": "I don't know...",
+          "next": "after4"
+        }
+      ]
+    },
+    "after4": {
+      "next": "after5",
+      "type": "text",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "I don't know how privy you were to all this- probably not much, being a lady- but we've had a lot of problems with bandits and highwaymen and all kinds of bad sorts. Your lord father, rest his soul, tried to crack down but there were too many of them and not enough of us. But no brigand would stand a chance against you. And it would lift a lot of hearts to see you out there with Silvergleam."
+    },
+    "after5": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "next": "after6",
+      "text": "That, milady, is a terrible idea. I advise strongly against it.",
+      "choices": [
+        {
+          "text": "Why?",
+          "next": "after6"
+        },
+        {
+          "text": "Don't worry, I can handle myself.",
+          "next": "after5a"
+        },
+        {
+          "text": "I didn't ask your opinion.",
+          "next": "after5z"
+        }
+      ]
+    },
+    "after5a": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "next": "after6",
+      "text": "It is not you I am concerned for, milady, not precisely."
+    },
+    "after5z": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "next": "after10",
+      "text": "Very well. I shall take my leave, then.",
+      "microscript": [
+        {
+          "flag": "UnleashedDidDismissJohann",
+          "set": true
+        }
+      ]
+    },
+    "after6": {
+      "type": "choice",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "text": "In this moment, there are few who know you can wield Silvergleam. There are fewer still who know the true extent of your powers. If you begin using them openly, word will spread quickly. Soon, Lord Garrick will know, then Lord Westerhold, then the entire Kingdom.",
+      "choices": [
+        {
+          "text": "I don't care about that",
+          "next": "after10"
+        },
+        {
+          "text": "What happens then?",
+          "next": "after7"
+        },
+        {
+          "text": "Oh, you're right, that is a problem",
+          "next": "after10"
+        }
+      ]
+    },
+    "after7": {
+      "type": "text",
+      "nameText": "Librarian Johann",
+      "image": "johann",
+      "next": "after10",
+      "text": "It is difficult to say. All will covet your power, and they will pursue it in various ways. Many will see you as a threat, and some will make attempts on your life. Perhaps other noble ladies will try to wield their artifacts, and some may succeed. I cannot say what will happen, only that it will be eventful, and not in a good way."
+    },
+    "after10": {
+      "type": "choice",
+      "nameText": "Timo",
+      "image": "timo",
+      "text": "Beg pardon, milady, but the way I see it, people will know sooner or later anyway, and we'll have to deal with all that. Right now, though, bandits are killing and looting and doing all kinds of terrible things to your people. Again, if you beg pardon, you are sworn to protect them. It may not have meant to be literal like, but you could.",
+      "choices": [
+        {
+          "text": "Forget Johann, let's kick some bandit ass!",
+          "next": "meta.return"
+        },
+        {
+          "text": "Very well, you make a good point. Let's do it.",
+          "next": "meta.return"
+        },
+        {
+          "text": "Johann is right, but so are you. Let's do it.",
+          "next": "meta.return"
+        }
+      ]
+    }
+  }
+}
